@@ -7,6 +7,7 @@ import java.util.Optional;
 
 public interface TelevisionRepository extends JpaRepository<Television, Long> {
 
+    Optional<Television> findByNameContainingIgnoreCase (String name);
 
 
 }
